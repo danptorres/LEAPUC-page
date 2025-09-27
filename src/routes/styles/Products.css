@@ -2,71 +2,41 @@
     padding: 7rem;
 }
 
-.products h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 60px;
-    background-image: linear-gradient(to bottom, white, rgb(190, 190, 190));
-    background-clip: text;
-    color: transparent;
-}
-
 .products h2 {
-    display: flex;
-    text-align: center;
+    /* display: flex; */
+    /* text-align: center; */
     font-size: 35px;
     background-image: linear-gradient(to bottom, rgb(255, 33, 33), rgb(170, 26, 26));
-    background-clip: text;
-    color: transparent;
+    /* background-clip: text; */
+    /* color: transparent; */
 }
 
 
-.products-container1,
-.products-container2,
-.products-container3 {
-    display: flex;
-    justify-content: center;
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 30px;
 }
 
-.products-container1 a,
-.products-container2 a,
-.products-container3 a {
+.products-grid a {
     text-decoration: none;
 }
 
-
-.product1,
-.product2,
-.product3,
-.product4,
-.product5,
-.product6,
-.product7,
-.product8, 
-.product9 {
-    padding: 10px;
-    background-color: hsla(0, 0%, 50%, 0.03);
-    border-radius: 20px;
+.product-card {
+  background-color: hsla(0, 0%, 50%, 0.03);
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.2s ease;
 }
 
-.product1:hover,
-.product2:hover,
-.product3:hover,
-.product4:hover,
-.product5:hover,
-.product6:hover,
-.product7:hover,
-.product8:hover,
-.product9:hover {
-    border: 1px solid rgb(107, 106, 106);
-    background-color: hsla(0, 21%, 91%, 0.03);
+.product-card:hover {
+  border: 1px solid rgb(107, 106, 106);
+  background-color: hsla(0, 21%, 91%, 0.03);
 }
 
 .price {
-    display: flex;
-    justify-content: center;
     font-size: 35px;
     background-image: linear-gradient(to bottom, white, rgb(207, 206, 206));
     background-clip: text;
@@ -76,11 +46,10 @@
 }
 
 
-.products-container1 img,
-.products-container2 img,
-.products-container3 img {
-    height: 350px;
-    border-radius: 20px;
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 

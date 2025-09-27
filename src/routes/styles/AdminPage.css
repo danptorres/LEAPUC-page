@@ -1,0 +1,33 @@
+.admin-page {
+    padding: 7rem;
+}
+
+
+.admin-page ul {
+    background-image: linear-gradient(to bottom, white, rgb(190, 190, 190));
+    background-clip: text;
+    color: transparent;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.admin-page ul li {
+    list-style: none;
+    margin-bottom: 30px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-page ul li button{
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    color: #0c0101;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(119, 119, 119));
+    cursor: pointer;
+    opacity: .9;
+    flex: 1;
+    border-radius: 10px;
+}

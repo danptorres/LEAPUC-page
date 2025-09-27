@@ -4,6 +4,17 @@
   font-family: "Oxanium", sans-serif;
 }
 
+h2 {
+    background-image: linear-gradient(to bottom, white, rgb(190, 190, 190));
+    background-clip: text;
+    color: transparent;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 body {
   background-color: rgb(26, 20, 20);
 }

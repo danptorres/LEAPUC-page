@@ -48,6 +48,7 @@ const Product1 = () => {
                 Comprar como atleta
             </label>
           </div>
+          {/* Tamanho da Camiseta */}
           <div className="product-size">
             <h2>Selecione o tamanho</h2>
             <ul className='size-list'>

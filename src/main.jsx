@@ -1,6 +1,7 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App.jsx';
+import { AuthProvider } from './contexts/AuthContext';
 import './index.css'
 
 // Importar rotas
@@ -11,6 +12,9 @@ import Products from './routes/Products'
 import Contact from './routes/Contact';
 import Login from './routes/Login'
 import Register from './routes/Register.jsx';
+import MyAccount from './routes/MyAccount.jsx'
+import AdminPage from './routes/AdminPage.jsx';
+import ProductDetail from './routes/ProductDetail.jsx';
 
 // Importar rotas dos produtos
 import Product1 from './routes/products/routes-products/Product1.jsx';
@@ -59,41 +63,21 @@ const router = createBrowserRouter([
         element: <Register/>
       },
       {
+        path: "my-account",
+        element: <MyAccount/>
+      },
+      {
+        path: "admin-page",
+        element: <AdminPage/>
+      },
+      {
         path: "product1",
         element: <Product1/>
       },
       {
-        path: "product2",
-        element: <Product2/>
-      },
-      {
-        path: "product3",
-        element: <Product3/>
-      },
-      {
-        path: "product4",
-        element: <Product4/>
-      },
-      {
-        path: "product5",
-        element: <Product5/>
-      },
-      {
-        path: "product6",
-        element: <Product6/>
-      },
-      {
-        path: "product7",
-        element: <Product7/>
-      },
-      {
-        path: "product8",
-        element: <Product8/>
-      },
-      {
-        path: "product9",
-        element: <Product9/>
-      },
+        path: "product/:id",
+        element: <ProductDetail />
+      },  
     ],
   },
 ])
@@ -101,6 +85,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
-  </React.StrictMode>,
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
+  </React.StrictMode>
 )

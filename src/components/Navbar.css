@@ -45,6 +45,12 @@
     border-radius: 5px;
 }
 
+.navbar .admin-btn{
+    background: linear-gradient(to bottom, rgb(112, 2, 2), rgb(133, 33, 33));
+    border-radius: 5px;
+}
+
+
 
 @media screen and (max-width: 850px){
     .navbar{

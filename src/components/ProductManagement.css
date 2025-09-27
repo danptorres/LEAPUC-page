@@ -1,0 +1,19 @@
+.product-management {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #353434;
+}
+
+.product-management h1 {
+    font-size: 38px
+}
+
+#product-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}

@@ -1,10 +1,10 @@
-import { Link, NavLink } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 import Logo from "../img/LOGO-1.png";
 
 const Navbar = () => {
-  return (
+  return ( 
     <nav className="navbar">
       <Link to={`/`}>
         <img src={Logo} alt="Logo LEAPUC" />

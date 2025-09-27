@@ -26,4 +26,4 @@ Este projeto está em construção e, por isso, algumas funcionalidades ainda n�
 ## Tecnologias Utilizadas  
 - **React.js**: Framework principal para o desenvolvimento da interface.  
 - **React Router**: Para navegação entre páginas e gerenciamento de rotas.  
-- **API RESTful**: (Futuro) Integração com back-end para gerenciamento de dados dinâmicos.  
+- **API RESTful**: Integração com back-end, utilizando o NodeJS, para gerenciamento de dados dinâmicos.  
